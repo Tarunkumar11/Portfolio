@@ -1,0 +1,60 @@
+{% extends 'mypage/base.html' %}
+{% block content %}
+{% load staticfiles %}
+
+<div class="row">
+	<div class="col-md-12"><h2 class="wow bounce" style="text-align:center;font-size:25px;">PROJECTS</h2></div>
+</div>
+<div class="row section" id="portfolio">
+	<div class="col-md-5 col-xs-12  wow fadeIn" >
+		<div class="portfolio-thumb">
+      <img src={% static "images/blog.jpg" class="img-responsive" alt="portfolio img" %}>
+      <div class="portfolio-overlay">
+        <h4 style = "padding-top:10px; padding-bottom:10px;font-size:20px;font-family:'Raleway';">MyBlog</h4>
+        <p>This is a Blogging website which is design by using the django framework.<p>
+      </div>
+    </div>
+  </div>
+	<div class="col-md-5 col-xs-12 offset-md-2 wow fadeIn" >
+		<div class="portfolio-thumb">
+			<img src={% static "images/MURA.png" class="img-responsive" alt="portfolio img" %}>
+			<div class="portfolio-overlay">
+				<h4 style = "padding-top:10px; padding-bottom:10px;font-size:20px;font-family:'Raleway';">Musculoskeletal Radiographs</h4>
+        <p>The aim of this project is to classify the Image(Bone) is Normal or Abnormal.Which is done by the using the Convolution Neural Netwok and some other method.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row section" id="portfolio">
+	<div class="col-md-5 col-xs-12 wow fadeIn" >
+    <div class="portfolio-thumb">
+      <img src={% static "images/intel.png" class="img-responsive" alt="portfolio img" %}>
+      <div class="portfolio-overlay">
+      	<h4 style = "padding-top:10px; padding-bottom:10px;font-size:20px;font-family:'Raleway';">Multiclass classification</h4>
+        <p>In this project I classify between the six class with the accurack od 96%</p>
+      </div>
+    </div>
+  </div>
+
+	<div class="col-md-5 col-xs-12 offset-md-2 wow fadeIn" >
+		<div class="portfolio-thumb">
+    	<img src={% static "images/switchhh.jpg" class="img-responsive" alt="portfolio img" %}>
+    	<div class="portfolio-overlay">
+      	<h4 style = "padding-top:10px; padding-bottom:10px;font-size:20px;font-family:'Raleway';">Smart Switch</h4>
+      	<p>This project based  on regular problem faced by people.By using this device anyone can set the running time ofappliance.</p>
+    	</div>
+  	</div>
+	</div>
+
+	<div class="col-md-6 col-xs-12 wow fadeIn" >
+  	<div class="portfolio-thumb">
+    	<img src= {% static "images/IIOO.jpg" class="img-responsive" alt="portfolio img" %}>
+    	<div class="portfolio-overlay">
+      	<h4 style = "padding-top:10px; padding-bottom:10px;font-size:20px;font-family:'Raleway';">Hone Automation</h4>
+      	<p>The aim of this project is to control the home appliance by Smart phone and make life easier</p>
+    	</div>
+  	</div>
+	</div>
+</div>
+{% endblock%}
