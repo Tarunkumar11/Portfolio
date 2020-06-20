@@ -3,13 +3,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Portfolio</title>
+		<link rel = "icon" href = "{% static 'images/iconn.ico'%}" type = "image/x-icon">
+		<title>TarunSaini</title>
 		<meta name="keywords" content="">
 		<meta name="description" content="">
-    <meta name="author" content="templatemo">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<!-- JS, Popper.js, and jQuery -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -28,48 +28,73 @@
 		<!-- custom-->
 		<link rel="stylesheet" href={% static "css/templatemo-style.css" %}>
 		<link rel="stylesheet" href={% static "js/valid.js" %}>
+		<link rel="stylesheet" href={% static "css/percentage.css" %}>
 
 		<style>
-		#hack{
-		background: url("/static/images/new.jpg");
-		background-size: cover;
-		background-repeat:  no-repeat;
-		padding-top: 0px;
-		padding-bottom: 140px;
-		text-align: center;
+		.bg-dark
+		{
+			background-color: transparent !important;
+		}
+		.text_itle_no_rotate
+		{
+			position: relative;
+			margin-top: 20px;
+			color: #000000;
+			font-weight: 1000;
+			font-size: 28px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			transition: 0.5s;
+			-webkit-transition: 0.5s;
+			-moz-transition: 0.5s;
+			-ms-transition: 0.5s;
+		}
+		.text_itle_rotate
+		{
+			position: relative;
+	    margin-top: 20px;
+			padding-top:300px;
+	    color: #000000;
+	    font-weight: 1000;
+	    font-size: 28px;
+	    letter-spacing: 1px;
+	    text-transform: uppercase;
+	    transition: 0.5s;
+	    -webkit-transition: 0.5s;
+	    -moz-transition: 0.5s;
+	    -ms-transition: 0.5s;
+	    -o-transition: 0.5s;
 		}
 
 
-		.rotate #letter{
-			padding-top: 1000px;
+		ul li a:hover{
+			display: block;
+		  padding: 15px;
+		  text-decoration: none;
+		  color: #aaa;
+		  font-weight: 800;
+		  text-transform: uppercase;
+		  margin: 0 10px;
+			transition: all 1s;
 		}
 
-		#contactside{
-			text-align: left;
-		}
-		.nav-link{
-			text-align: center;
-		}
 		</style>
-
 	</head>
 
 	<body>
 
-
-<!--	<div id="fullpage">
-		 start home-->
 		<div id="home" class="section">
 			<div class="cont" id = "hack">
-			<nav class="navbar  navbar-expand-sm navbar-dark bg-dark " >
-			 <a class="navbar-brand" href="{% url 'index' %}" style="text-align:left"> Tarun</a>
+			<nav class=" nav navbar  navbar-expand-sm navbar-dark bg-dark " >
+				<img src="{% static 'images/imageL.png' %}" width="40" height="40">
+			 <a class="navbar-brand" href="{% url 'index' %}" style="text-align:left"> Tarun Saini</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse ml-auto " id="navbarText" >
-					<ul class="navbar-nav navbar-right mr-auto">
-						<li class="nav-item">
-							<a class="nav-link"  href="{% url 'index' %}">Home </a>
+				<div class=" nav collapse navbar-collapse ml-auto" id="navbarText" >
+					<ul class="navbar-nav navbar-right mr-auto fill" id="homelink">
+						<li class="nav-item" >
+							<a class="nav-link"  href="{% url 'index' %}" >Home </a>
 						</li>
 						<li class="nav-item ">
 							<a class="nav-link" href="{% url 'projectpage' %}">Project</a>
@@ -81,9 +106,9 @@
 							<a class="nav-link" href="#contact">Contact</a>
 						</li>
 
-						<li class="nav-item ">
+					<!--	<li class="nav-item ">
 							<a  class="nav-link"  href= "{{MEDIA_URL }}Resume_cBhKC5Q.pdf" download >download CV</a>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</nav>
@@ -92,7 +117,8 @@
 				<div class="row">
 					<div class="col-md-2"></div>
 							<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
-								<h2 class="media-heading">Simple And Hard Worker </h2>
+								<h2 class="text_itle_no_rotate ">Elegant And Hard Worker</h2>
+
 							<div class="col-md-2"></div>
 					</div>
 				</div>
@@ -100,7 +126,7 @@
 				<div class="row">
 					<div class="col-md-2"></div>
 							<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
-								<h2 class="rotate" style="padding-top:300px;">WEB DESIGNER, WEB DEVELOPER,PROBLEM SOLVER,PROJECT LEADER</h2>
+								<h2 class="text_itle_rotate rotate">WEB DESIGNER, WEB DEVELOPER,PROBLEM SOLVER,PROJECT LEADER</h2>
 							<div class="col-md-2"></div>
 					</div>
 				</div>
@@ -109,47 +135,77 @@
 
 			<div id="work" class="section">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-12 wow bounce">
-							<h2>My Top Skills</h2>
-						</div>
-						</div>
+					<h2 class="text_itle">My Top Skills</h2>
+
+
 
 						<div class="row">
-						<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
-							<div class="media">
-								<div class="media-object media-left">
-									<i class="fa fa-laptop"></i>
-								</div>
-								<div class="media-body">
-									<h3 class="media-heading">Web Design & Development</h3>
 
-
-								</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp"  style="padding-bottom:50px">
+							<div class="card" style=" width: auto;height: 27rem;">
+									<h2 class="text">WEB Development</h2>
+										<div class="percent">
+			   						 <svg>
+			   							 <circle cx="70" cy="70" r="70"></circle>
+			   							 <circle cx="70" cy="70" r="70"></circle>
+			   						 </svg>
+			   						 <div class="number">
+			   							 <h2>90<span>%</span></h2>
+			   						 </div>
+			   					 </div>
 							</div>
 						</div>
 
-						<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
-							<div class="media">
-								<div class="media-object media-left">
-									<i class="fa fa-link"></i>
-								</div>
-								<div class="media-body">
-									<h3 class="media-heading">Problem Solving</h3>
-
-								</div>
+						<div class="col-md-3 col-sm-6 col-xs-12"  style="padding-bottom:50px">
+							<div class="card" style=" width: auto;height: 27rem;">
+									<h2 class="text">COMPETATIVE Programming</h2>
+										<div class="percent">
+			   						 <svg>
+			   							 <circle id = "1" cx="70" cy="70" r="70" ></circle>
+			   							 <circle  id = "2" cx="70" cy="70" r="70" style="stroke-dashoffset: calc(440 - (400 * 80) / 100);stroke: #00a1ff;;
+											 																								animation: progress 1s ease-out forwards;
+							 																												-webkit-animation: progress 3s ease-out forwards;"></circle>
+			   						 </svg>
+			   						 <div class="number">
+			   							 <h2>80<span>%</span></h2>
+			   						 </div>
+			   					 </div>
 							</div>
 						</div>
 
-						<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s" style="padding-bottom:15px">
-							<div class="media">
-								<div class="media-object media-left">
-									<i class="fa fa-link"></i>
-								</div>
-								<div class="media-body">
-									<h3 class="media-heading">Machine Learning</h3>
+						<div class="col-md-3 col-sm-6 col-xs-12"  style="padding-bottom:50px">
+							<div class="card" style=" width: auto;height: 27rem;">
+									<h2 class="text">MACHINE Learning</h2>
+										<div class="percent">
+			   						 <svg>
+			   							 <circle cx="70" cy="70" r="70"></circle>
+			   							 <circle cx="70" cy="70" r="70" style="stroke-dashoffset: calc(440 - (400 * 70) / 100);
+							 				stroke: #ff04f7;
+							 				animation: progress 1s ease-out forwards;
+							 				-webkit-animation: progress 5s ease-out forwards;"></circle>
+			   						 </svg>
+			   						 <div class="number">
+			   							 <h2>70<span>%</span></h2>
+			   						 </div>
+			   					 </div>
+							</div>
+						</div>
 
-								</div>
+						<div class="col-md-3 col-sm-6 col-xs-12"  style="padding-bottom:50px">
+							<div class="card" style=" width: auto;height: 27rem;">
+									<h2 class="text">HTML & CSS</h2>
+										<div class="percent">
+			   						 <svg>
+			   							 <circle cx="70" cy="70" r="70"></circle>
+			   							 <circle cx="70" cy="70" r="70" style="stroke-dashoffset: calc(440 - (400 * 85) / 100);
+							 				stroke: #194191;
+							 				animation: progress 1s ease-out forwards;
+							 				-webkit-animation: progress 5s ease-out forwards;"></circle>
+			   						 </svg>
+			   						 <div class="number">
+			   							 <h2>85<span>%</span></h2>
+			   						 </div>
+			   					 </div>
 							</div>
 						</div>
 
@@ -178,27 +234,23 @@
 				<div class="row">
 					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
 						<h2>ABOUT Me</h2>
-						<p>Rather than a django DEVELOPER and problem SOLVER I am a student a NIT Uttarakhnad.I really love to learn new Things and always want to something which help to others</p>
-						
+						<p>Rather than a Django Developer and Problem Solver. I am a student a NIT Uttarakhnad.I really love to learn new Things and always want to make something which help to others</p>
+
+
 					</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
-						<span class="text-top">Web Developer <small>80%</small></span>
+						<span class="text-top">Python <small>90%</small></span>
 							<div class="progress">
 								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
 							</div>
-						<span>Competative Programming <small>80%</small></span>
+						<span>C &AMP; C++ &#9 Language <small>80%</small></span>
 							<div class="progress">
 								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
 							</div>
-						<span>Managing Skills <small>90%</small></span>
+						<span>Managing &AMP; Communication Skills   <small>80%</small></span>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
 							</div>
-						<span>Python &AMP; Machile Learning <small>85%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-							</div>
-
 							<span>Embedded &AMP; IOT <small>85%</small></span>
 								<div class="progress">
 									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
@@ -226,6 +278,7 @@
 						</address>
 					</div>
 					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp " data-wow-delay="0.6s" style="bottom-padding:5px;">
+							<p class="contact-title">LEAVE A MESSAGE </p>
 						<form  role="form" method="POST" action= "{% url 'message' %}">
 							{% csrf_token %}
 							<input name="Name" type="text" class="form-control" id="Name" placeholder="Your Name">

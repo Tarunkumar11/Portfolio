@@ -14,3 +14,7 @@ class resume(models.Model):
         verbose_name_plural = "My_resume"
     def __str__(self):
         return self.fileres.name
+class createproject(models.Model):
+    Image = models.ImageField()
+    name = models.CharField(max_length = 15)
+    description = models.CharField(max_length = 150)

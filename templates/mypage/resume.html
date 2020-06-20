@@ -1,11 +1,13 @@
 {% extends 'mypage/base.html' %}
 {% block content %}
 {% load staticfiles %}
-<h1 class="wow bounce" style="text-align:center; font-size: 25px">Resume</h1>
-<div class="container-fluid" style = "padding:10px">
+
+
+<h1 class="wow bounce" style="text-align:center; font-size: 35px;color:black; font-family: 'Raleway', sans-serif;">Resume</h1>
+<div class="container" style = "padding:10px; color:black" >
   <div class="row">
     <div class="container" style = "text-align:justify;font-size:18px;font-weight: 400;">
-      <h2 id ="obj" >Objective</h2>
+      <h1 id ="obj" >Objective</h1>
       <p>Seeking challenge to hone my skills by working in consonance with the organization’s goals and to
       deliver the best quality with professional integrity and ethics. A good academic background attests
       to my hard work and enthusiasm for the Engineering projects and research. So, I want to work for
@@ -20,10 +22,8 @@
   <div class="row" style = "text-align:justify; padding-top:15px;">
     <div class="col-md-5 col-xs-12" id = "eduation">
         <div id = 'about' data-wow-delay="0.9s">
-          <div class="container">
-            <div class="row">
-              <h1>Education</h1>
-            </div>
+          <div class="container-md-5" style = "text-align:left;font-family: 'Raleway', sans-serif;">
+              <h1 style = "padding-top:20px;">Education</h1>
             <div class="row">
               <div class="col-md-12 col-xs-12" >
                 <h3>Bechalor of technology</h3>
@@ -49,7 +49,7 @@
     <div class= "col-md-5 col-xs-12 offset-md-2 " id = "internship">
       <div class="container-md" >
         <div class="row">
-          <h1 >Summer Internship and Traning</h1>
+          <h1 style = "text-align:left;padding-top:20px;">Summer Internship and Training</h1>
         </div>
         <p id = "para"> Internship at Indian Institute of technology, Roorkee</p>
         <p id = "para">Completed six weeks summer training on Embedded systems from CETPAInfotech.</p>
@@ -60,115 +60,53 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="row" style = "text-align:justify;padding-top:15px;">
-    <div class="col-md-5 col-xs-12" id = "myskill">
+  <div class="row" style = "text-align:justify; padding-top:15px;">
+    <div class="col-md-5 col-xs-12" id = "eduation">
         <div id = 'about' data-wow-delay="0.9s">
-          <div class="container" style = "font-family:'sans-serif';">
-            <div class="row">
-              <h1 >My Skills</h1>
-            </div>
-            <span>Managing Skills <small>90%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-            </div>
-            <span>Python &AMP; Machile Learning <small>85%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-            </div>
-            <span>Embedded &AMP; IOT <small>85%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-            </div>
-            <span>Embedded &AMP; IOT <small>85%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-            </div>
-            <span>Managing Skills <small>90%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-            </div>
-            <span>Python &AMP; Machile Learning <small>85%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-            </div>
-            <span>Embedded &AMP; IOT <small>85%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-            </div>
-            <span>Embedded &AMP; IOT <small>85%</small></span>
-            <div class="progress">
-              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-            </div>
+          <div class="container-md-5" style = "margin:0px;padding:0px;">
+              <h2 style = "text-align:left;padding-top:20px;">Skills</h2>
+    						<span class="text-top">Algorithm &AMP; Data Structure <small>90%</small></span>
+    							<div class="progress">
+    								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+    							</div>
+    						<span>C &AMP; C++ &#9 Language <small>80%</small></span>
+    							<div class="progress">
+    								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+    							</div>
+    						<span>Managing &AMP; Communication Skills   <small>80%</small></span>
+    							<div class="progress">
+    								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+    							</div>
+    							<span>Deep Learning <small>70%</small></span>
+    								<div class="progress">
+    									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+
+                    </div>
+                    <span>Embedded &AMP; IOT <small>75%</small></span>
+      								<div class="progress">
+      									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+      								</div>
+                        <span>Microsoft Word &AMP Excel. <small>85%</small></span>
+          								<div class="progress">
+          									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+          								</div>
+
         </div>
 
       </div>
     </div>
 
-    <div class="col-md-5 col-xs-12 offset-md-2" id = "internship">
-      <div class="container" >
-        <div class="row">
-          <h1 >Position of Responsibility</h1>
-        </div>
-        <p id = "para"> Internship at Indian Institute of technology, Roorkee</p>
-        <p id = "para">Completed six weeks summer training on Embedded systems from CETPAInfotech.</p>
-        <p id = "para">Completed six weeks summer training on IOT from CETPA Infotech.</p>
-        <p id = "para">Attended two-day workshop at MNIT Jaipur on Machine learning conducted by EIsystemsIndia.</p>
-        <p id = "para"> Attended five-day workshop conducted by college on ARDUINO.</p>
+    <div class= "col-md-5 col-xs-12 offset-md-2 " id = "internship">
+      <div class="container-md-5" >
+
+          <h2 style = "padding-bottom:20px;padding-top:20px;">Position of Responsibilities</h2>
+
+        <p id = "para"> Event Coordinator of college's E-cell. </p>
+        <p id = "para">Student Member of Robotics Club of college.</p>
+        <p id = "para">Technical Coordinator of college’s technical club namely Hertz.</p>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--<div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>-->
-
-
 </div>
 
 
