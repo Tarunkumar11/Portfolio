@@ -21,6 +21,6 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'',include('mypage.urls')),
-    url('admin/', admin.site.urls),
+    url('myadminpage/', admin.site.urls),
 
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
