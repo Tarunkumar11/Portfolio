@@ -61,7 +61,7 @@ animation-timing-function: ease-in-out;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 .card{
-    margin:10px;
+    margin:0px;
     position: relative;
     display: flex;
     width: 260px;
